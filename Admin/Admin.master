@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="Admin.css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+
+       
+    <header id="header">
+
+        <div>
+            <table>
+               
+                <tr>
+                    <td>
+                       <asp:HyperLink ID="hyper_Ahome" runat="server" NavigateUrl="~/Admin/Admin_Home.aspx" style="margin-left:15px;">Home</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Cregi" runat="server" NavigateUrl="~/Admin/Registration_Data.aspx" style="margin-left:15px;">Registration Data</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="hyper_Aabout" runat="server" NavigateUrl="~/Admin/Admin_AboutUs.aspx" style="margin-left:15px;">About Us</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Aproduct" runat="server" NavigateUrl="~/Admin/Admin_Products.aspx" style="margin-left:15px;">Products</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Acontact" runat="server" NavigateUrl="~/Admin/Admin_ContactUs.aspx" style="margin-left:15px;">Contact Us</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Afeedbck" runat="server" NavigateUrl="~/Admin/Admin_Feedback.aspx" style="margin-left:15px;">Feedback</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:Image ID="Image1" runat="server" Height="56px" ImageUrl="~/Images/ajanta-logo.jpg" Width="152px" style="margin-left: 11px" />
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="hyper_logout" runat="server" NavigateUrl="~/Client/Client_Home.aspx" style="margin-left:500px;">Log Out</asp:HyperLink>
+                    </td>
+                     
+                </tr>
+            </table>
+        </div>
+    </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Client.master.cs" Inherits="Client_Client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <link rel="stylesheet" href="Client.css" />
+    <script src="Client_JavaScript.js" type="text/javascript"></script>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+
+    <header id="header">
+
+        <div>
+            
+            <table>
+                <tr>
+                     <td>
+                        <asp:HyperLink ID="hypradmin" runat="server" style="margin-left:1020px;" NavigateUrl="~/Client/Login_Admin.aspx">Admin</asp:HyperLink>
+                    </td>
+                    <td>
+                         <asp:HyperLink ID="C_login" runat="server" style="margin-left:15px;" NavigateUrl="~/Client/Client_Login.aspx">Login</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="25px" ImageUrl="~/Images/cart_icon.jpg" Width="36px" style="margin-left:15px"/>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                       <asp:HyperLink ID="hyper_Ahome" runat="server" NavigateUrl="~/Client/Client_Home.aspx" style="margin-left:15px;">Home</asp:HyperLink>
+                    </td>
+                   
+                    <td>
+                        <asp:HyperLink ID="hyper_Aabout" runat="server" NavigateUrl="~/Client/Client_AboutUs.aspx" style="margin-left:15px;">About Us</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Aproduct" runat="server" NavigateUrl="~/Client/Client_Products.aspx" style="margin-left:15px;">Products</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Acontact" runat="server" NavigateUrl="~/Client/Client_ContactUs.aspx" style="margin-left:15px;">Contact Us</asp:HyperLink>
+                    </td>
+                    <td>
+                       <asp:HyperLink ID="hyper_Afeedbck" runat="server" NavigateUrl="~/Client/Client_Feedback.aspx" style="margin-left:15px;">Feedback</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:Image ID="Image1" runat="server" Height="56px" ImageUrl="~/Images/ajanta-logo.jpg" Width="152px" style="margin-left: 11px" />
+                    </td>
+                    
+                     
+                </tr>
+            </table>
+        </div>
+    </header>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
